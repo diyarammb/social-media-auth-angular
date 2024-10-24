@@ -17,7 +17,7 @@ import { AuthComponent } from "../components/Auth/auth/auth.component";
     }),
     AuthModule.forRoot({
       domain: "dev-6tnf8bi2azp1l3sy.us.auth0.com",
-      clientId: "AdPMjbUBg0PPGRfomJDLlDhinyzXMnMG",
+      clientId: "FbN3z1rFofHTAVnxLIm9vlBOTqJn1h51",
       authorizationParams: {
         redirect_uri: window.location.origin,
       },

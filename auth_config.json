@@ -1,0 +1,11 @@
+{
+  "domain": "dev-6tnf8bi2azp1l3sy.us.auth0.com",
+  "clientId": "AdPMjbUBg0PPGRfomJDLlDhinyzXMnMG",
+  "authorizationParams": {
+    "audience": "{API_IDENTIFIER}",
+    "redirect_uri": "window.location.origin"
+  },
+  "apiUri": "http://localhost:3001",
+  "appUri": "http://localhost:4200",
+  "errorPath": "/error"
+}

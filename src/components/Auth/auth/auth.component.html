@@ -9,6 +9,8 @@
     <div class="bg-white p-8 rounded-lg shadow-lg text-center w-80 mx-auto">
       <div class="space-y-4">
         <button
+          *ngIf="!(auth.isAuthenticated$ | async)"
+          (click)="loginWithRedirect()"
           class="flex items-center justify-center w-full bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600 transition-colors"
         >
           <img
@@ -33,4 +35,10 @@
     </div>
   </div>
   <div></div>
+</div>
+
+<div *ngIf="auth.isAuthenticated$ | async">
+  <h2>Welcome, {{ user?.name }}!</h2>
+  <p>Email: {{ user?.email }}</p>
+  <button (click)="logout()">Log out</button>
 </div>
